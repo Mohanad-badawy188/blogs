@@ -13,8 +13,7 @@ Ensure you have the following installed:
 Clone the repository:
 
 - **git clone** https://github.com/Mohanad-badawy188/blogs.git
-
--cd blogs
+- **cd blogs**
 
 ## Install dependencies
 
@@ -28,8 +27,9 @@ npm run dev
 The app will be available at http://localhost:3000.
 
 2️⃣ Running in Production
-npm run build
-npm start
+
+- **npm run build**
+- **npm start**
 
 ## Approach
 
