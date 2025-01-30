@@ -5,8 +5,9 @@ Welcome to the **Blog App**, A simple blogging platform built with Next.js.
 ## Getting Started
 
 Ensure you have the following installed:
-• Node.js (Latest LTS)
-• npm
+
+- **Node.js (Latest LTS)**
+- **npm**
 
 ## Installation
 
