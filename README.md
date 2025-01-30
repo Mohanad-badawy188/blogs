@@ -50,3 +50,7 @@ Server-Side Fetching for better performance
 Dynamic Routing for individual blogs
 Custom API Handling for cleaner request logic
 Minimalist Navigation using a navbar
+
+## Deployment
+
+The app is deployed and can be accessed at https://blogs-iota-ebon.vercel.app/
