@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie App
+
+Welcome to the **Blog App**, A simple blogging platform built with Next.js.
 
 ## Getting Started
 
-First, run the development server:
+Ensure you have the following installed:
+• Node.js (Latest LTS)
+• Yarn or npm
 
-```bash
+## Installation
+
+Clone the repository:
+git clone https://github.com/Mohanad-badawy188/blogs.git
+cd blogs
+
+## Install dependencies
+
+npm install
+
+## Running the Project
+
+1️⃣ Local Development
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2️⃣ Running in Production
+npm run build
+npm start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Approach
 
-## Learn More
+Structure
 
-To learn more about Next.js, take a look at the following resources:
+• Server Components: The home page uses a server component to fetch and display the list of blogs.
+• Dynamic Routing: Clicking on a blog navigates to a dynamic route (/post/[id]).
+• Custom Fetch Function: All API requests are handled by a custom fetch function that abstracts the HTTP logic (URL, method, and body).
+• Navigation: A navbar allows switching between the home page and the about page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Key Considerations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+• Optimized API calls using server components for faster load times.
+• Used Next.js dynamic routing for blog pages.
+• Followed best practices in Next.js with modular components and structured API handling.
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Server-Side Fetching for better performance
+Dynamic Routing for individual blogs
+Custom API Handling for cleaner request logic
+Minimalist Navigation using a navbar

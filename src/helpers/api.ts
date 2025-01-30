@@ -1,17 +1,16 @@
 interface Props {
   url: string;
   method?: string;
-  //@ts-expect-error "body can be any time"
-  body?: any;
+  body?: Record<string, unknown> | null;
 }
 const baseUrl = "https://jsonplaceholder.typicode.com";
-export const api = ({ url, method = "GET", body = {} }: Props) => {
+export const api = ({ url, method = "GET", body = null }: Props) => {
   const data = fetch(`${baseUrl}/${url}`, {
     method,
     headers: {
       "Content-Type": "application/json",
     },
-    // body,
+    body: method === "GET" ? null : body ? JSON.stringify(body) : null,
   });
   return data;
 };
