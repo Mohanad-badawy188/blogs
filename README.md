@@ -1,4 +1,4 @@
-# Movie App
+# Blog App
 
 Welcome to the **Blog App**, A simple blogging platform built with Next.js.
 
