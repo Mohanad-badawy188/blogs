@@ -1,3 +1,5 @@
+"use server";
+
 import { api } from "@/helpers/api";
 
 export const getBlogs = async () => {
